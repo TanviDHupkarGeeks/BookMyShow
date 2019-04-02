@@ -1,0 +1,10 @@
+<body>
+  <div>
+    <h1>Upcoming Movie Shows</h1>
+    <hr>
+    <!-- we are iterating through all the movies captured in movie list -->
+    <div *ngFor="let movie of moviesList" class="col-md-12">
+      <app-movie-thumbnail [movie]="movie" #thumbnail></app-movie-thumbnail>
+    </div>
+  </div>
+</body>

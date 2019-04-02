@@ -1,0 +1,35 @@
+
+<div class='container'>
+<!-- loading images from assset/images folder using the title of the movie -->
+  <img src="../../../assets/images/{{movie.title}}.png" alt="{{movie?.title}}">
+
+  <div class="row">
+    <div class="col-md-11">
+      <h2>{{movie?.title}} </h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div><strong>Genre:</strong> {{movie?.genre}}</div>
+      <div><strong>Year:</strong> {{movie?.year}}</div>
+      <div><strong>Director:</strong> {{movie?.director}}</div>
+    </div>
+
+    <div class="col-md-6">
+      <div><strong>Cast:</strong> {{movie?.cast}}</div>
+      <address>
+        <strong>Notes:</strong><br />
+        {{movie?.notes}}<br />
+      </address>
+    </div>
+
+    
+
+
+<!-- calling the book seats component and passing movie title in route -->
+ <div class="container">
+  <button [routerLink]="['/bookSeats',movie?.title]"  class="btn btn-primary">BOOK TICKETS</button>
+</div>
+</div>
+

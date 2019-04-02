@@ -1,0 +1,8 @@
+<!-- here we show the details of movie  -->
+<div [routerLink]="['/movies',movie?.title]" class="well hoverwell thumbnail">
+  <h2>{{movie?.title}}</h2>
+  <div>Genre : {{movie?.genre}}</div>
+  <div>Director : {{movie?.director}}</div>
+  <div>Cast : {{movie?.cast}}</div>
+  <div>Notes : {{movie?.notes}}</div>
+</div>
